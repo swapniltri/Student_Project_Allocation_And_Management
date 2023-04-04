@@ -1,0 +1,40 @@
+    <footer class="border-top text-center small text-muted py-3">
+        <p class="m-0">Copyright &copy; 2022 <a href="/" class="text-muted">SPAAM</a>. All rights reserved.</p>
+    </footer>
+
+
+    <div id="chat-wrapper" class="chat-wrapper shadow border-top border-left border-right">
+
+        <div class="chat-title-bar">Chat <span class="chat-title-bar-close" id="cross-icon"><svg
+                    class="svg-inline--fa fa-times-circle fa-w-16" aria-hidden="true" data-prefix="fas"
+                    data-icon="times-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    data-fa-i2svg="">
+                </svg><i class="fas fa-times-circle"></i></span></div>
+
+        <div id="chat" class="chat-log">
+
+        </div>
+
+        <form id="chatForm" class="chat-form border-top">
+            <input type="text" class="chat-field" id="chatField" placeholder="Type a message…" autocomplete="off">
+            <input type="hidden" id="userFixed" value="<%=User%>">
+        </form>
+
+    </div>
+
+
+    <script src="/socket.io/socket.io.js" > </script>
+
+    <script>
+        $(function () {
+            var socket = io.connect();
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="/action.js"></script>
+</body>
+
+</html>

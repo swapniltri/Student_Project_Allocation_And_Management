@@ -1,0 +1,28 @@
+<%- include("partials/header") -%>
+
+    <% if(condition1){ %>
+        <div class="alert alert-danger text-center"><%=message%></div>
+    <% } %>
+
+    <h1>Team Name: <%=teamName%></h1>
+
+    <div>
+        <ul class="list-group">
+            <% for(var i=0;i<member.length;i++){ %>
+                <li class="list-group-item"><%=member[i].name%>
+                    <form class="delete-post-form d-inline" action="/deleteMember/<%=member[i].name%>" method="POST">
+                        <button class="delete-post-button text-danger" data-toggle="tooltip" data-placement="top"
+                            title="Delete"><i class="fas fa-trash"></i></button>
+                    </form>
+                </li>
+            <% } %>
+        </ul>
+        <form action="/addMember/<%=teamName%>" method="POST">
+            <div class="input-group mb-3">
+                <input name="username" type="text" class="form-control" placeholder="Student's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">ADD MEMBER</button>
+            </div>
+        </form>
+    </div>
+
+<%- include("partials/footer") -%>

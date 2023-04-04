@@ -1,0 +1,41 @@
+<%- include("partials/header") -%>
+
+    <h1>Name: <%=username%></h1>
+
+    <div>
+        <h1>Domain: </h1>
+        <ul class="list-group">
+            <% for(var i=0;i<domain.length;i++){ %>
+                <li class="list-group-item"><%=domain[i].topic_title%>
+                    <form class="delete-post-form d-inline" action="/deleteDomain/<%=domain[i].topic_title%>" method="POST">
+                        <button class="delete-post-button text-danger" data-toggle="tooltip" data-placement="top"
+                            title="Delete"><i class="fas fa-trash"></i></button>
+                    </form>
+                </li>
+            <% } %>
+        </ul>
+        <form action="/addDomain" method="POST">
+            <div class="input-group mb-3">
+                <input name="domain" class="form-control" type="text" placeholder="Add Domain" aria-label="default input example">
+                <input name="number" class="form-control" type="text" placeholder="Total number of projects you want to take" aria-label="default input example">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <h2>Projects Requested</h2> 
+        <div class="list-group">
+            <% for(var i=0 ; i < projects.length ; i++ ){ %>
+                <a href="/project/<%=projects[i]._id%>" class="list-group-item list-group-item-action">
+                    <strong><%=projects[i].project_title%></strong> 
+                </a>
+
+            <% } %>
+        </div>
+
+    </div>
+
+    
+
+<%- include("partials/footer") -%>

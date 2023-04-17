@@ -1,0 +1,912 @@
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+//------------------- Navbar ------------------------
+
+.nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background-color: #FAAB78;
+    .left{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;  
+            font-weight: bold;
+        }
+    }
+
+    .right{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        span{
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:8px;
+        }
+
+        button{
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: #E21818;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgb(187, 0, 0);
+            transition: all 0.3s;
+        }
+
+        button:hover{
+          box-shadow: 3px 3px 3px 3px rgb(187, 0, 0);
+        }
+    }
+}
+
+
+//------------------------------ Footer ----------------------------
+
+.footer{
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  background-color: #FAEDCD;
+  align-items: center;
+  padding: 20px;
+}
+
+//--------------------------------Login -----------------------------
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85vh;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background-color: #FAEDCD;
+  .container{
+    display: flex;
+    gap: 40px;
+    color: white;
+    .left{
+      flex: 1;
+      padding: 50px;
+      height: 500px;
+      background-color: #FAAB78;
+      border-radius: 25px;
+    }
+    .right{
+      flex: 1;
+      padding: 50px;
+      height: 500px;
+      background-color: #FAAB78;
+      border-radius: 25px;
+    }
+
+    h1{
+      margin-bottom: 20px;
+    }
+
+    form{
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      label{
+        font-size: 20px;
+      }
+
+      input{
+        border: none;
+        height: 50px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      button{
+        border: none;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #007bff;
+        color: white;
+        font-size: 20px;
+        box-shadow: 2px 3px 3px 3px #006bdd;
+        transition: all 0.3s;
+      }
+
+      button:hover{
+        box-shadow: 3px 4px 4px 4px #006bdd;
+        background-color: white;
+        color: #007bff;
+      }
+    }
+
+  }
+  
+  .sign-up{
+    button{
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #007bff;
+      color: white;
+      font-size: 20px;
+      box-shadow: 2px 3px 3px 3px #006bdd;
+      transition: all 0.3s;
+    }
+    button:hover{
+      box-shadow: 3px 4px 4px 4px #006bdd;
+      background-color: white;
+      color: #007bff;
+    }
+  }
+}
+
+// ---------------------------------- Sign Up -------------------------------
+
+.signup-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background-color: #FAEDCD;
+  padding-top: 40px;
+  .container{
+    display: flex;
+    gap: 40px;
+    color: white;
+    .left{
+      flex: 1;
+      padding: 50px;
+      height: 700px;
+      background-color: #FAAB78;
+      border-radius: 25px;
+    }
+    .right{
+      flex: 1;
+      padding: 50px;
+      height: 700px;
+      background-color: #FAAB78;
+      border-radius: 25px;
+    }
+
+    h1{
+      margin-bottom: 20px;
+    }
+
+    form{
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      label{
+        font-size: 20px;
+      }
+
+      input{
+        border: none;
+        height: 50px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      button{
+        border: none;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #007bff;
+        color: white;
+        font-size: 20px;
+        transition: all 0.3s;
+        box-shadow: 2px 3px 3px 3px #006bdd;
+      }
+      button:hover{
+        box-shadow: 3px 4px 4px 4px #006bdd;
+        background-color: white;
+        color: #007bff;
+      }
+    }
+
+  }
+  
+  .sign-up{
+    button{
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #007bff;
+      color: white;
+      font-size: 20px;
+      box-shadow: 2px 3px 3px 3px #006bdd;
+      transition: all 0.3s;
+      margin-bottom: 10px;
+    }
+    button:hover{
+      box-shadow: 3px 4px 4px 4px #006bdd;
+      background-color: white;
+      color: #007bff;
+    }
+
+  }
+}
+
+//-------------------------------- ALL Projects ----------------------------
+
+.all-project-container{
+
+  background-color: #FAEDCD;
+
+  min-height: 85vh;
+
+  h2{
+    text-align: center;
+    padding: 20px;
+  }
+
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    a{
+      text-decoration: none;
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #007bff;
+      transition: all 0.3s;
+      font-size: 24px;
+      text-align: center;
+      box-shadow: 2px 3px 3px 3px #006bdd;
+    }
+
+    a:hover{
+      box-shadow: 5px 5px 5px 5px #006bdd;
+    }
+  }
+}
+
+//---------------------------------- Single Project---------------------
+
+.project-container{
+  background-color: #FAEDCD;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .project{
+    padding: 30px;
+    height: 75%;
+    width: 65%;
+    background-color: #FAAB78;
+    margin: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    .content{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      padding: 10px;
+      width: 600px;
+      transition: all 0.3s;
+      cursor: pointer;
+      box-shadow: 2px 3px 3px 3px #006bdd;
+
+      h1{
+        color: #007bff;
+      }
+    }
+
+    .content:hover{
+      box-shadow: 5px 5px 5px 5px #006bdd;
+    }
+  }
+}
+
+//-------------------------------- Profile -----------------------------
+
+.teacher-profile-container{
+  background-color: #FAEDCD;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  min-height: 85vh;
+
+  .username{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 2px 3px 3px 3px #006bdd;
+  }
+
+  .username:hover{
+    box-shadow: 5px 5px 5px 5px #006bdd;
+    color: #007bff;
+  }
+
+  .domains{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .domain{
+      background-color: white;
+      color: black;
+      width: 400px;
+      height: 50px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      position: relative;
+      transition: all 0.3s;
+      cursor: pointer;
+
+      box-shadow: 2px 3px 3px 3px #006bdd;
+
+      button{
+        color: red;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background-color: inherit;
+        transition: all 0.3s;
+        padding: 5px 5px 2px 5px;
+      }
+
+      button:hover{
+        font-size: 26px;
+      }
+
+    }
+    
+    .domain:hover{
+      box-shadow: 5px 5px 5px 5px #006bdd;
+      color: #007bff;
+    }
+  }
+
+  form{
+    button{
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      transition: all 0.3s;
+      box-shadow: 2px 2px 2px 2px #006bdd;
+    }
+
+    button:hover{
+      box-shadow: 2px 3px 3px 3px #006bdd;
+      color: #007bff;
+      background-color: white;
+    }
+  }
+
+  .projects-requested{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .list{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      a{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        width: 100%px;
+        border-radius: 10px;
+        justify-content: space-between;
+        transition: all 0.3s;
+        font-size: 20px;
+        box-shadow: 2px 3px 3px 3px #006bdd;
+        button{
+          border: none;
+          border-radius: 10px;
+          padding: 10px 20px;
+          color: white;
+          background-color: #007bff;
+          transition: all 0.3s;
+          box-shadow: 2px 2px 2px 2px #006bdd;
+        }
+
+        button:hover{
+          box-shadow: 2px 3px 3px 3px #006bdd;
+          color: #007bff;
+          background-color: white;
+        }
+
+      }
+      
+      a:hover{
+        box-shadow: 5px 5px 5px 5px #006bdd;
+        color: #007bff;
+      }
+    }
+  }
+}
+
+
+.student-profile-container{
+  padding: 50px;
+  background-color: #FAEDCD;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  .username{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 2px 3px 3px 3px #006bdd;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .username:hover{
+    box-shadow: 5px 5px 5px 5px #006bdd;
+    color: #007bff;
+  }
+
+  .team{
+    padding-top: 20px;
+  }
+
+  .team-members{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .list-group{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap ;
+      gap: 20px;
+      span{
+        list-style: none;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px 50px;
+        box-shadow: 2px 3px 3px 3px #006bdd;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      span:hover{
+        box-shadow: 3px 4px 4px 4px #006bdd;
+        color: #007bff;
+      }
+    }
+    a{
+      text-decoration: none;
+      border-radius: 15px;
+      background-color: #007bff;
+      color: white;
+      width: fit-content;
+      padding: 10px 20px;
+      box-shadow: 2px 2px 2px 2px #006bdd; 
+      transition: all 0.3s;
+    }
+
+    a:hover{
+      box-shadow: 3px 4px 4px 4px #006bdd;
+      color: #007bff; 
+      background-color: white;
+    }
+
+    form{
+      button{
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        box-shadow: 2px 2px 2px 2px #006bdd;
+        transition: all 0.3s;
+        border-radius: 10px;
+        border: none;
+      }
+
+      button:hover{
+        box-shadow: 3px 3px 3px 3px #006bdd;
+        color: #007bff;
+        background-color: white;
+      }
+    }
+  }
+
+  .project{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a{
+      text-decoration: none;
+      background-color: white;
+      border-radius: 10px;
+      color: black;
+      box-shadow: 2px 3px 3px 3px #006bdd;
+      transition: all 0.3s;
+      cursor: pointer;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    a:hover{
+      box-shadow: 3px 4px 4px 4px #006bdd;
+      color: #007bff;
+    }
+  }
+}
+
+.team-container{
+  padding: 50px;
+  background-color: #FAEDCD;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 85vh;
+  .username{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 2px 3px 3px 3px #006bdd;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .username:hover{
+    box-shadow: 5px 5px 5px 5px #006bdd;
+    color: #007bff;
+  }
+
+  .list-group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    li{
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      box-shadow: 2px 3px 3px 3px #006bdd;
+      font-size: 20px;
+      font-weight: 500;
+      transition: all 0.3s;
+      cursor: pointer;
+      position: relative;
+      button{
+        border: none;
+        background-color: white;
+        transition: all 0.3s;
+        position: absolute;
+        right: 8px;
+      }
+
+      button:hover{
+        font-size: 24px;
+      }
+    }
+
+    li:hover{
+      box-shadow: 3px 4px 4px 4px #006bdd;
+      color: #007bff;
+    }
+  }
+
+  form{
+    .add-member-btn{
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      box-shadow: 2px 2px 2px 2px #006bdd;
+      transition: all 0.3s;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .add-member-btn:hover{
+      box-shadow: 3px 3px 3px 3px #006bdd;
+      color: #007bff;
+      background-color: white;
+    }
+  }
+}
+
+// --------------------------------- Create Project --------------------------
+
+.create-project-container{
+  background-color: #FAEDCD;
+  width: 100%;
+  padding: 50px;
+
+  button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #006bdd;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border: none;
+  }
+
+  button:hover{
+    box-shadow: 3px 3px 3px 3px #006bdd;
+    color: #007bff;
+    background-color: white;
+  }
+}
+
+//-------------------------------- Teacher list ----------------------
+
+.teacher-list{
+  background-color: #FAEDCD;
+  min-height: 85vh;
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+    
+  .teacher{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 3px 3px 3px #006bdd;
+    transition: all 0.3s;
+  }
+
+  .teacher:hover{
+    box-shadow: 3px 4px 4px 4px #006bdd;
+    color: #007bff;
+  }
+
+  button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #006bdd;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border: none;
+  }
+
+  button:hover{
+    box-shadow: 3px 3px 3px 3px #006bdd;
+    color: #007bff;
+    background-color: white;
+  }
+  
+  
+  
+}
+
+//-------------------------------- Edit Project ------------------------
+
+.edit-project-container{
+  background-color: #FAEDCD;
+  width: 100%;
+  padding: 50px;
+
+  .username{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 2px 3px 3px 3px #006bdd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .username:hover{
+    box-shadow: 5px 5px 5px 5px #006bdd;
+    color: #007bff;
+  }
+
+  button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px #006bdd;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  button:hover{
+    box-shadow: 3px 3px 3px 3px #006bdd;
+    color: #007bff;
+    background-color: white;
+  }
+
+
+}
+
+//-------------------------------- Chat --------------------------------
+
+.header-chat-icon {
+  cursor: pointer;
+  position: relative;
+  top: 3px;
+}
+
+
+/* Chat */
+.chat-wrapper {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  right: 20px;
+  width: 290px;
+  height: 350px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  transform: translateY(100%)
+}
+
+.chat--visible {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.chat-title-bar {
+  background-color: #292929;
+  color: #FFF;
+  padding: 4px 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-title-bar-close {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.chat-title-bar-close:hover {
+  opacity: 1;
+}
+
+.chat-log {
+  padding: 8px;
+  flex: 1;
+  overflow: auto;
+}
+
+.chat-self,
+.chat-other {
+  font-size: .75rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.chat-self {
+  padding-left: 25%;
+}
+
+.chat-self .chat-avatar {
+  margin-left: 6px;
+}
+
+.chat-self .chat-message {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat-self .chat-message-inner {
+  text-align: right;
+  padding: 4px 7px;
+  border-radius: 12px;
+  background-color: #007bff;
+  color: #FFF;
+}
+
+.chat-other {
+  padding-right: 25%;
+}
+
+.chat-other .chat-avatar {
+  margin-right: 6px;
+}
+
+.chat-other .chat-message {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.chat-other .chat-message-inner {
+  padding: 4px 7px;
+  border-radius: 12px;
+  background-color: #f1f0f0;
+}
+
+.chat-message a {
+  color: #212529
+}
+
+.chat-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 7px;
+  border: none;
+  outline: none;
+  font-size: .75rem;
+}

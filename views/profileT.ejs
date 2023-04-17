@@ -1,41 +1,37 @@
 <%- include("partials/header") -%>
 
-    <h1>Name: <%=username%></h1>
-
-    <div>
-        <h1>Domain: </h1>
-        <ul class="list-group">
-            <% for(var i=0;i<domain.length;i++){ %>
-                <li class="list-group-item"><%=domain[i].topic_title%>
-                    <form class="delete-post-form d-inline" action="/deleteDomain/<%=domain[i].topic_title%>" method="POST">
-                        <button class="delete-post-button text-danger" data-toggle="tooltip" data-placement="top"
-                            title="Delete"><i class="fas fa-trash"></i></button>
-                    </form>
-                </li>
-            <% } %>
-        </ul>
-        <form action="/addDomain" method="POST">
-            <div class="input-group mb-3">
-                <input name="domain" class="form-control" type="text" placeholder="Add Domain" aria-label="default input example">
-                <input name="number" class="form-control" type="text" placeholder="Total number of projects you want to take" aria-label="default input example">
-                <button type="submit" class="btn btn-primary">Add</button>
+<div class="teacher-profile-container">
+    <h1 class="username"><%=username%></h1>
+    <h1>Domain: </h1>
+    <div class="domains">
+        <% for(var i=0;i<domain.length;i++){ %>
+            <div class="domain">
+                <span><%=domain[i].topic_title%></span>
+                <form action="/deleteDomain/<%=domain[i].topic_title%>" method="POST">
+                    <button><i class="fas fa-trash"></i></button>
+                </form>
             </div>
-        </form>
+        <% } %>
     </div>
-
-    <div>
+    <h1>Add Domains</h1>
+    <form action="/addDomain" method="POST">
+        <div class="input-group mb-3">
+            <input name="domain" class="form-control" type="text" placeholder="Add Domain" aria-label="default input example">
+            <input name="number" class="form-control" type="text" placeholder="Total number of projects you want to take" aria-label="default input example">
+            <button type="submit">Add</button>
+        </div>
+    </form>
+    <div class="projects-requested">
         <h2>Projects Requested</h2> 
-        <div class="list-group">
-            <% for(var i=0 ; i < projects.length ; i++ ){ %>
-                <a href="/project/<%=projects[i]._id%>" class="list-group-item list-group-item-action">
-                    <strong><%=projects[i].project_title%></strong> 
+        <div class="list">
+            <% for(var i=0; i < projects.length; i++){ %>
+                <a href="/project/<%=projects[i]._id%>" >
+                    <span><%=projects[i].project_title%></span>
+                    <button>Message</button> 
                 </a>
-
             <% } %>
         </div>
-
     </div>
-
-    
+</div>
 
 <%- include("partials/footer") -%>

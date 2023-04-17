@@ -1,27 +1,42 @@
-<%- include("partials/header") -%>
+<%- include("partials/header") -%> <% if(condition){ %>
+<div class="alert alert-danger text-center"><%=message%></div>
+<% } %>
 
-    <% if(condition){ %>
-        <div class="alert alert-danger text-center"><%=message%></div>
-    <% } %>
-
-    <div class="container py-md-5 col-lg-7 col-lg-offset-7 container--narrow">
-        <form action="/editProject/<%=project_id%>" method="POST">
-            <div>
-                <h1>Project Major:</h1>
-                <h4><%=major%></h4>
-            </div>
-            <div>
-                <h1>Project Title:</h1>
-                <textarea required name="title" id="post-body" class="body-content tall-textarea form-control"
-                    type="text"><%=project_title%></textarea>
-            </div>
-            <div class="body-content">
-                <h1>Project Description:</h1>
-                <textarea rows="12" required name="description" id="post-body" class="body-content tall-textarea form-control"
-                    type="text"><%=project_description%></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Edit Project</button>
-        </form>
+<div
+  class="edit-project-container py-md-5 col-lg-7 col-lg-offset-7 container--narrow"
+>
+  <form action="/editProject/<%=project_id%>" method="POST">
+    <div class="username">
+      <h1>Project Major</h1>
+      <h4><%=major%></h4>
     </div>
+    <div>
+      <h1>Project Title:</h1>
+      <textarea
+        required
+        name="title"
+        id="post-body"
+        class="body-content tall-textarea form-control"
+        type="text"
+      >
+<%=project_title%></textarea
+      >
+    </div>
+    <div class="body-content">
+      <h1>Project Description:</h1>
+      <textarea
+        rows="12"
+        required
+        name="description"
+        id="post-body"
+        class="body-content tall-textarea form-control"
+        type="text"
+      >
+<%=project_description%></textarea
+      >
+    </div>
+    <button type="submit" class="btn btn-primary">Edit Project</button>
+  </form>
+</div>
 
 <%- include("partials/footer") -%>

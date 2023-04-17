@@ -35,7 +35,7 @@ body{
             color: white;
             font-size: 20px;
             font-weight: bold;
-            cursor: pointer;
+            // cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -47,7 +47,7 @@ body{
             font-weight: bold;
             color: white;
             font-size: 20px;
-            cursor: pointer;
+            // cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -289,7 +289,7 @@ body{
       width: 200px;
       height: 200px;
       border-radius: 10px;
-      cursor: pointer;
+      // cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -336,7 +336,7 @@ body{
       padding: 10px;
       width: 600px;
       transition: all 0.3s;
-      cursor: pointer;
+      // cursor: pointer;
       box-shadow: 2px 3px 3px 3px #006bdd;
 
       h1{
@@ -365,7 +365,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    cursor: pointer;
+    // cursor: pointer;
     transition: all 0.3s;
     box-shadow: 2px 3px 3px 3px #006bdd;
   }
@@ -391,7 +391,7 @@ body{
       font-size: 24px;
       position: relative;
       transition: all 0.3s;
-      cursor: pointer;
+      // cursor: pointer;
 
       box-shadow: 2px 3px 3px 3px #006bdd;
 
@@ -495,7 +495,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    cursor: pointer;
+    // cursor: pointer;
     transition: all 0.3s;
     box-shadow: 2px 3px 3px 3px #006bdd;
     display: flex;
@@ -526,7 +526,7 @@ body{
         border-radius: 15px;
         padding: 20px 50px;
         box-shadow: 2px 3px 3px 3px #006bdd;
-        cursor: pointer;
+        // cursor: pointer;
         transition: all 0.3s;
         font-size: 20px;
         font-weight: 500;
@@ -558,7 +558,7 @@ body{
         background-color: #007bff;
         color: white;
         padding: 10px 20px;
-        cursor: pointer;
+        // cursor: pointer;
         box-shadow: 2px 2px 2px 2px #006bdd;
         transition: all 0.3s;
         border-radius: 10px;
@@ -585,7 +585,7 @@ body{
       color: black;
       box-shadow: 2px 3px 3px 3px #006bdd;
       transition: all 0.3s;
-      cursor: pointer;
+      // cursor: pointer;
       padding: 10px 20px;
       font-size: 20px;
       font-weight: 500;
@@ -610,7 +610,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    cursor: pointer;
+    // cursor: pointer;
     transition: all 0.3s;
     box-shadow: 2px 3px 3px 3px #006bdd;
     display: flex;
@@ -634,7 +634,7 @@ body{
       font-size: 20px;
       font-weight: 500;
       transition: all 0.3s;
-      cursor: pointer;
+      // cursor: pointer;
       position: relative;
       button{
         border: none;
@@ -660,7 +660,7 @@ body{
       background-color: #007bff;
       color: white;
       padding: 10px 20px;
-      cursor: pointer;
+      // cursor: pointer;
       box-shadow: 2px 2px 2px 2px #006bdd;
       transition: all 0.3s;
       border-radius: 10px;
@@ -686,7 +686,7 @@ body{
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
-    cursor: pointer;
+    // cursor: pointer;
     box-shadow: 2px 2px 2px 2px #006bdd;
     transition: all 0.3s;
     border-radius: 10px;
@@ -718,7 +718,7 @@ body{
     background-color: white;
     border-radius: 10px;
     padding: 10px 20px;
-    cursor: pointer;
+    // cursor: pointer;
     box-shadow: 2px 3px 3px 3px #006bdd;
     transition: all 0.3s;
   }
@@ -732,7 +732,7 @@ body{
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
-    cursor: pointer;
+    // cursor: pointer;
     box-shadow: 2px 2px 2px 2px #006bdd;
     transition: all 0.3s;
     border-radius: 10px;
@@ -760,7 +760,7 @@ body{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
-    cursor: pointer;
+    // cursor: pointer;
     transition: all 0.3s;
     box-shadow: 2px 3px 3px 3px #006bdd;
     display: flex;
@@ -778,7 +778,7 @@ body{
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
-    cursor: pointer;
+    // cursor: pointer;
     box-shadow: 2px 2px 2px 2px #006bdd;
     transition: all 0.3s;
     border-radius: 10px;
@@ -798,7 +798,7 @@ body{
 //-------------------------------- Chat --------------------------------
 
 .header-chat-icon {
-  cursor: pointer;
+  // cursor: pointer;
   position: relative;
   top: 3px;
 }
@@ -835,7 +835,7 @@ body{
 
 .chat-title-bar-close {
   opacity: .7;
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .chat-title-bar-close:hover {

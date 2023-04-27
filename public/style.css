@@ -1,0 +1,785 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: #FAAB78;
+}
+.nav-container .left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.nav-container .left a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-container .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container .right span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.nav-container .right a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.nav-container .right button {
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: #E21818;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(187, 0, 0);
+  transition: all 0.3s;
+}
+.nav-container .right button:hover {
+  box-shadow: 3px 3px 3px 3px rgb(187, 0, 0);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  background-color: #FAEDCD;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85vh;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background-color: #FAEDCD;
+}
+.login-container .container {
+  display: flex;
+  gap: 40px;
+  color: white;
+}
+.login-container .container .left {
+  flex: 1;
+  padding: 50px;
+  height: 500px;
+  background-color: #FAAB78;
+  border-radius: 25px;
+}
+.login-container .container .right {
+  flex: 1;
+  padding: 50px;
+  height: 500px;
+  background-color: #FAAB78;
+  border-radius: 25px;
+}
+.login-container .container h1 {
+  margin-bottom: 20px;
+}
+.login-container .container form {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login-container .container form label {
+  font-size: 20px;
+}
+.login-container .container form input {
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.login-container .container form button {
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  transition: all 0.3s;
+}
+.login-container .container form button:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  background-color: white;
+  color: #007bff;
+}
+.login-container .sign-up button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  transition: all 0.3s;
+}
+.login-container .sign-up button:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  background-color: white;
+  color: #007bff;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  background-color: #FAEDCD;
+  padding-top: 40px;
+}
+.signup-container .container {
+  display: flex;
+  gap: 40px;
+  color: white;
+}
+.signup-container .container .left {
+  flex: 1;
+  padding: 50px;
+  height: 700px;
+  background-color: #FAAB78;
+  border-radius: 25px;
+}
+.signup-container .container .right {
+  flex: 1;
+  padding: 50px;
+  height: 700px;
+  background-color: #FAAB78;
+  border-radius: 25px;
+}
+.signup-container .container h1 {
+  margin-bottom: 20px;
+}
+.signup-container .container form {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.signup-container .container form label {
+  font-size: 20px;
+}
+.signup-container .container form input {
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.signup-container .container form button {
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+}
+.signup-container .container form button:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  background-color: white;
+  color: #007bff;
+}
+.signup-container .sign-up button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  transition: all 0.3s;
+  margin-bottom: 10px;
+}
+.signup-container .sign-up button:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  background-color: white;
+  color: #007bff;
+}
+
+.all-project-container {
+  background-color: #FAEDCD;
+  min-height: 85vh;
+}
+.all-project-container h2 {
+  text-align: center;
+  padding: 20px;
+}
+.all-project-container .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.all-project-container .list a {
+  text-decoration: none;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #007bff;
+  transition: all 0.3s;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+}
+.all-project-container .list a:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+}
+
+.project-container {
+  background-color: #FAEDCD;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-container .project {
+  padding: 30px;
+  height: 75%;
+  width: 65%;
+  background-color: #FAAB78;
+  margin: 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.project-container .project .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 600px;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+}
+.project-container .project .content h1 {
+  color: #007bff;
+}
+.project-container .project .content:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+}
+
+.teacher-profile-container {
+  background-color: #FAEDCD;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 85vh;
+}
+.teacher-profile-container .username {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+}
+.teacher-profile-container .username:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+  color: #007bff;
+}
+.teacher-profile-container .domains {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.teacher-profile-container .domains .domain {
+  background-color: white;
+  color: black;
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  position: relative;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+}
+.teacher-profile-container .domains .domain button {
+  color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+  background-color: inherit;
+  transition: all 0.3s;
+  padding: 5px 5px 2px 5px;
+}
+.teacher-profile-container .domains .domain button:hover {
+  font-size: 26px;
+}
+.teacher-profile-container .domains .domain:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+  color: #007bff;
+}
+.teacher-profile-container form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+}
+.teacher-profile-container form button:hover {
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+.teacher-profile-container .projects-requested {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.teacher-profile-container .projects-requested .list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.teacher-profile-container .projects-requested .list a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100% px;
+  border-radius: 10px;
+  justify-content: space-between;
+  transition: all 0.3s;
+  font-size: 20px;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+}
+.teacher-profile-container .projects-requested .list a button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #007bff;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+}
+.teacher-profile-container .projects-requested .list a button:hover {
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+.teacher-profile-container .projects-requested .list a:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+  color: #007bff;
+}
+
+.student-profile-container {
+  padding: 50px;
+  background-color: #FAEDCD;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.student-profile-container .username {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  display: flex;
+  justify-content: space-between;
+}
+.student-profile-container .username:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+  color: #007bff;
+}
+.student-profile-container .team {
+  padding-top: 20px;
+}
+.student-profile-container .team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.student-profile-container .team-members .list-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.student-profile-container .team-members .list-group span {
+  list-style: none;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 50px;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  transition: all 0.3s;
+  font-size: 20px;
+  font-weight: 500;
+}
+.student-profile-container .team-members .list-group span:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  color: #007bff;
+}
+.student-profile-container .team-members a {
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #007bff;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+  transition: all 0.3s;
+}
+.student-profile-container .team-members a:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+.student-profile-container .team-members form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border: none;
+}
+.student-profile-container .team-members form button:hover {
+  box-shadow: 3px 3px 3px 3px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+.student-profile-container .project {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.student-profile-container .project a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  transition: all 0.3s;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.student-profile-container .project a:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  color: #007bff;
+}
+
+.team-container {
+  padding: 50px;
+  background-color: #FAEDCD;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 85vh;
+}
+.team-container .username {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  display: flex;
+  justify-content: space-between;
+}
+.team-container .username:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+  color: #007bff;
+}
+.team-container .list-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.team-container .list-group li {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s;
+  position: relative;
+}
+.team-container .list-group li button {
+  border: none;
+  background-color: white;
+  transition: all 0.3s;
+  position: absolute;
+  right: 8px;
+}
+.team-container .list-group li button:hover {
+  font-size: 24px;
+}
+.team-container .list-group li:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  color: #007bff;
+}
+.team-container form .add-member-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border: none;
+}
+.team-container form .add-member-btn:hover {
+  box-shadow: 3px 3px 3px 3px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+
+.create-project-container {
+  background-color: #FAEDCD;
+  width: 100%;
+  padding: 50px;
+}
+.create-project-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border: none;
+}
+.create-project-container button:hover {
+  box-shadow: 3px 3px 3px 3px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+
+.teacher-list {
+  background-color: #FAEDCD;
+  min-height: 85vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.teacher-list .teacher {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  transition: all 0.3s;
+}
+.teacher-list .teacher:hover {
+  box-shadow: 3px 4px 4px 4px #006bdd;
+  color: #007bff;
+}
+.teacher-list button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border: none;
+}
+.teacher-list button:hover {
+  box-shadow: 3px 3px 3px 3px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+
+.edit-project-container {
+  background-color: #FAEDCD;
+  width: 100%;
+  padding: 50px;
+}
+.edit-project-container .username {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  box-shadow: 2px 3px 3px 3px #006bdd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.edit-project-container .username:hover {
+  box-shadow: 5px 5px 5px 5px #006bdd;
+  color: #007bff;
+}
+.edit-project-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 2px 2px #006bdd;
+  transition: all 0.3s;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.edit-project-container button:hover {
+  box-shadow: 3px 3px 3px 3px #006bdd;
+  color: #007bff;
+  background-color: white;
+}
+
+.header-chat-icon {
+  position: relative;
+  top: 3px;
+}
+
+/* Chat */
+.chat-wrapper {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  right: 20px;
+  width: 290px;
+  height: 350px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.chat--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.chat-title-bar {
+  background-color: #292929;
+  color: #FFF;
+  padding: 4px 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-title-bar-close {
+  opacity: 0.7;
+}
+
+.chat-title-bar-close:hover {
+  opacity: 1;
+}
+
+.chat-log {
+  padding: 8px;
+  flex: 1;
+  overflow: auto;
+}
+
+.chat-self,
+.chat-other {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.chat-self {
+  padding-left: 25%;
+}
+
+.chat-self .chat-avatar {
+  margin-left: 6px;
+}
+
+.chat-self .chat-message {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chat-self .chat-message-inner {
+  text-align: right;
+  padding: 4px 7px;
+  border-radius: 12px;
+  background-color: #007bff;
+  color: #FFF;
+}
+
+.chat-other {
+  padding-right: 25%;
+}
+
+.chat-other .chat-avatar {
+  margin-right: 6px;
+}
+
+.chat-other .chat-message {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.chat-other .chat-message-inner {
+  padding: 4px 7px;
+  border-radius: 12px;
+  background-color: #f1f0f0;
+}
+
+.chat-message a {
+  color: #212529;
+}
+
+.chat-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 7px;
+  border: none;
+  outline: none;
+  font-size: 0.75rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,59 +1,195 @@
-<%- include("partials/header") -%>
-
-    <% if(condition){ %>
-        <div class="alert alert-danger text-center"><%=message%></div>
-    <% } %>
-
-    <div>
-        <h1>Teacher's Signup</h1>
-        <form action="/teacher_signup" method="POST">
-            <div class="mb-3">
-                <label for="username-register" class="mb-1">Username</label>
-                <input name="username" id="username-register" class="form-control" type="text"
-                    placeholder="Enter your username" autocomplete="off" required>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input name="email" type="email" class="form-control" id="exampleInputEmail1" 
-                    placeholder="Enter your email" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn btn-primary">Sign-Up</button>
-        </form>
+<%- include("partials/header") -%> <% if(condition){ %>
+<div class="alert alert-danger text-center"><%=message%></div>
+<% } %>
+<div class="signup-container">
+  <div class="container">
+    <div class="left">
+      <h1>Teacher's Sign Up</h1>
+      <form action="/teacher_signup" method="POST">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your username"
+          autocomplete="off"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          autocomplete="off"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
-
-    <div>
-        <h1>Student's Signup</h1>
-        <form action="/student_signup" method="POST">
-            <div class="mb-3">
-                <label for="username-register" class="mb-1">Username</label>
-                <input name="username" id="username-register" class="form-control" type="text"
-                    placeholder="Enter your username" autocomplete="off" required>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input name="email" type="email" class="form-control" id="exampleInputEmail1" 
-                    placeholder="Enter your email" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3">
-                <label for="username-register" class="mb-1">Roll No.</label>
-                <input name="rollno" id="username-register" class="form-control" type="text"
-                    placeholder="Enter your Roll No." autocomplete="off" required>
-            </div>
-            <div class="mb-3">
-                <label for="username-register" class="mb-1">Branch</label>
-                <input name="branch" id="username-register" class="form-control" type="text"
-                    placeholder="Enter your Branch" autocomplete="off" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign-Up</button>
-        </form>
+    <div class="right">
+      <h1>Student's Sign Up</h1>
+      <form action="/student_signup" method="POST">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter your username"
+          autocomplete="off"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          autocomplete="off"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <label for="rollno">Roll No.</label>
+        <input
+          type="text"
+          name="rollno"
+          id="rollno"
+          placeholder="Enter your roll no."
+          autocomplete="off"
+          required
+        />
+        <label for="branch">Branch</label>
+        <input
+          type="text"
+          name="branch"
+          id="branch"
+          placeholder="Enter your branch"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
+  </div>
+  <a class="sign-up" href="/">
+    <button>Login</button>
+  </a>
+</div>
+<!-- <div>
+  <h1>Teacher's Signup</h1>
+  <form action="/teacher_signup" method="POST">
+    <div class="mb-3">
+      <label for="username-register" class="mb-1">Username</label>
+      <input
+        name="username"
+        id="username-register"
+        class="form-control"
+        type="text"
+        placeholder="Enter your username"
+        autocomplete="off"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        name="email"
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        placeholder="Enter your email"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        name="password"
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Sign-Up</button>
+  </form>
+</div>
+
+<div>
+  <h1>Student's Signup</h1>
+  <form action="/student_signup" method="POST">
+    <div class="mb-3">
+      <label for="username-register" class="mb-1">Username</label>
+      <input
+        name="username"
+        id="username-register"
+        class="form-control"
+        type="text"
+        placeholder="Enter your username"
+        autocomplete="off"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        name="email"
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        placeholder="Enter your email"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        name="password"
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="username-register" class="mb-1">Roll No.</label>
+      <input
+        name="rollno"
+        id="username-register"
+        class="form-control"
+        type="text"
+        placeholder="Enter your Roll No."
+        autocomplete="off"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label for="username-register" class="mb-1">Branch</label>
+      <input
+        name="branch"
+        id="username-register"
+        class="form-control"
+        type="text"
+        placeholder="Enter your Branch"
+        autocomplete="off"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Sign-Up</button>
+  </form>
+</div> -->
 
 <%- include("partials/footer") -%>

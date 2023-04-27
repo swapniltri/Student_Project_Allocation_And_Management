@@ -4,37 +4,38 @@
         <div class="alert alert-danger text-center"><%=message%></div>
     <% } %>
 
-    <h1>Name: <%=username%></h1>
-    <h1>Roll No: <%=rollno%></h1>
-    <h1>Branch: <%=branch%></h1>
-    <h1>Team Name: <%=teamName%></h1>
-    <h1>Team Members:</h1>
-    <div>
-        <ul class="list-group">
+<div class="student-profile-container">
+    <h1 class="username"><span>Name</span> <span><%=username%></span></h1>
+    <h1 class="username"><span>Roll No</span><span><%=rollno%></span></h1>
+    <h1 class="username"><span>Branch</span> <span><%=branch%></span></h1>
+    <h1 class="username"><span>Team Name</span><span><%=teamName%></span></h1>
+    <h1 class="team">Team Members</h1>
+    <div class="team-members">
+        <div class="list-group">
             <% for(var i=0;i<member.length;i++){ %>
-                <li class="list-group-item"><%=member[i].name%></li>
+                <span><%=member[i].name%></span>
             <% } %>
-        </ul>
+        </div>
         <% if(condition3){ %>
-            <div class="row" id="id2">
-                <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action" href="/addMember/<%=teamName%>">Add/Remove Member</a>
-                </div>
-            </div>
+            <a class="list-group-item list-group-item-action" href="/addMember/<%=teamName%>">Add/Remove Member</a>
         <% }else{ %>
             <form action="/createTeam" method="POST">
                 <div class="input-group mb-3">
                     <input name="teamName" type="text" class="form-control" placeholder="Enter your Team Name" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Create Team</button>
+                    <button type="submit" id="button-addon2">Create Team</button>
                 </div>
             </form>
         <% } %>
     </div>
     <% if(condition2){ %>
-        <h1>Project:  </h1>
-        <a href="/createProject">Create Project</a>
+        <div class="project">
+            <h1>Project  </h1>
+            <a href="/createProject">Create Project</a>
+        </div>
     <% }else{ %>
-        <h1>Project: <a href="/changeProject/<%=nameOfProject%>"><%=nameOfProject%></a></h1>
+        <div class="project">
+            <h1>Project: <a href="/changeProject/<%=nameOfProject%>"><%=nameOfProject%></a></h1>
+        </div>
     <% } %>
-
+</div>
 <%- include("partials/footer") -%>

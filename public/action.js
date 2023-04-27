@@ -1,14 +1,3 @@
-var temp = 0;
-// var showit = function(){
-//     if(temp==0)
-//     document.querySelector("#id2").style.display = "block";
-//     else
-//     document.querySelector("#id2").style.display = "none";
-//     temp=(temp===0?1:0);
-// }
-
-// document.querySelector("#id1").addEventListener("click",showit);
-
 var showChatBox = function () {
   document.querySelector("#chat-wrapper").classList.add("chat--visible");
 };

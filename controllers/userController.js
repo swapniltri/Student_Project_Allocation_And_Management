@@ -125,7 +125,7 @@ exports.profile=async function(req,res){
                             if(foundTeam){
                                 res.render("profileS",{condition1:false,message:"",teamName:foundTeam.team_name,username:foundStudent.username,rollno:foundStudent.rollno,branch:foundStudent.branch,member:foundTeam.team_members.length===null?[]:foundTeam.team_members,condition3:true,condition2:(foundTeam.project===""?true:false),nameOfProject:foundTeam.project,User:req.session.username});
                             }else{
-                                res.render("profileS",{condition1:false,message:"",teamName:"",username:foundStudent.username,rollno:foundStudent.rollno,branch:foundStudent.branch,member:[],condition3:false,condition2:false,nameOfProject:"",User:req.session.username});
+                                res.render("profileS",{condition1:false,message:"",teamName:"",username:foundStudent.username,rollno:foundStudent.rollno,branch:foundStudent.branch,member:[],condition3:false,condition2:true,nameOfProject:"",User:req.session.username});
                             }
                         }
                     }).clone().catch(function (err) { console.log(err) });
@@ -277,29 +277,8 @@ exports.deleteMember = async function(req,res){
                                             }
                                         }).clone().catch(function (err) { console.log(err) });
                                     }).catch(err=>console.log(err));
-                                    // await team.findOne({team_name:found.team},async function(err,foundTm){
-                                    //     if(err){
-                                    //         console.log(err);
-                                    //     }else{
-                                    //         await foundTm.team_members.pull({
-                                    //             name:req.params.memberName
-                                    //         });
-                                    //         await foundTm.save().then(result=>{
-                                    //             res.render("team",{condition1:false,member:result.team_members,teamName:found.team});
-                                    //         }).catch(err=>console.log(err));
-                                    //         // res.render("team",{condition1:false,member:foundTm.team_members,teamName:found.team});
-                                    //     }
-                                    // }).clone().catch(function (err) { console.log(err) });
                                 }
                             }).clone().catch(function (err) { console.log(err) });
-                            
-                            // await team.findOne({team_name:found.team},async function(err,foundTm){
-                            //     if(err){
-                            //         console.log(err);
-                            //     }else{
-                            //         res.render("team",{condition1:false,member:foundTm.team_members,teamName:found.team});
-                            //     }
-                            // }).clone().catch(function (err) { console.log(err) });
                         }
                     }else{
                         res.render("team",{condition1:true,message:"Only team leader can remove the members",member:foundTeam.team_members,teamName:found.team,User:req.session.username});

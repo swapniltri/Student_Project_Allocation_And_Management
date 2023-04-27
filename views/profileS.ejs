@@ -1,41 +1,58 @@
 <%- include("partials/header") -%>
 
     <% if(condition1){ %>
-        <div class="alert alert-danger text-center"><%=message%></div>
-    <% } %>
-
-<div class="student-profile-container">
-    <h1 class="username"><span>Name</span> <span><%=username%></span></h1>
-    <h1 class="username"><span>Roll No</span><span><%=rollno%></span></h1>
-    <h1 class="username"><span>Branch</span> <span><%=branch%></span></h1>
-    <h1 class="username"><span>Team Name</span><span><%=teamName%></span></h1>
-    <h1 class="team">Team Members</h1>
-    <div class="team-members">
-        <div class="list-group">
-            <% for(var i=0;i<member.length;i++){ %>
-                <span><%=member[i].name%></span>
-            <% } %>
+        <div class="alert alert-danger text-center">
+            <%=message%>
         </div>
-        <% if(condition3){ %>
-            <a class="list-group-item list-group-item-action" href="/addMember/<%=teamName%>">Add/Remove Member</a>
-        <% }else{ %>
-            <form action="/createTeam" method="POST">
-                <div class="input-group mb-3">
-                    <input name="teamName" type="text" class="form-control" placeholder="Enter your Team Name" aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <button type="submit" id="button-addon2">Create Team</button>
-                </div>
-            </form>
         <% } %>
-    </div>
-    <% if(condition2){ %>
-        <div class="project">
-            <h1>Project  </h1>
-            <a href="/createProject">Create Project</a>
-        </div>
-    <% }else{ %>
-        <div class="project">
-            <h1>Project: <a href="/changeProject/<%=nameOfProject%>"><%=nameOfProject%></a></h1>
-        </div>
-    <% } %>
-</div>
-<%- include("partials/footer") -%>
+
+            <div class="student-profile-container">
+                <h1 class="username"><span>Name</span> <span>
+                        <%=username%>
+                    </span></h1>
+                <h1 class="username"><span>Roll No</span><span>
+                        <%=rollno%>
+                    </span></h1>
+                <h1 class="username"><span>Branch</span> <span>
+                        <%=branch%>
+                    </span></h1>
+                <h1 class="username"><span>Team Name</span><span>
+                        <%=teamName%>
+                    </span></h1>
+                <h1 class="team">Team Members</h1>
+                <div class="team-members">
+                    <div class="list-group">
+                        <% for(var i=0;i<member.length;i++){ %>
+                            <span>
+                                <%=member[i].name%>
+                            </span>
+                            <% } %>
+                    </div>
+                    <% if(condition3){ %>
+                        <a class="list-group-item list-group-item-action" href="/addMember/<%=teamName%>">Add/Remove
+                            Member</a>
+                        <% }else{ %>
+                            <form action="/createTeam" method="POST">
+                                <div class="input-group mb-3">
+                                    <input name="teamName" type="text" class="form-control"
+                                        placeholder="Enter your Team Name" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2">
+                                    <button type="submit" id="button-addon2">Create Team</button>
+                                </div>
+                            </form>
+                            <% } %>
+                </div>
+                <% if(condition2){ %>
+                    <div class="project">
+                        <h1>Project </h1>
+                        <a href="/createProject">Create Project</a>
+                    </div>
+                    <% }else{ %>
+                        <div class="project">
+                            <h1>Project: <a href="/changeProject/<%=nameOfProject%>">
+                                    <%=nameOfProject%>
+                                </a></h1>
+                        </div>
+                        <% } %>
+            </div>
+            <%- include("partials/footer") -%>

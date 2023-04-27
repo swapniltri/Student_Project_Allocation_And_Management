@@ -29,6 +29,11 @@
     display: block;
 }
 
+.seperateButton{
+  position: absolute;
+  z-index: 2;
+}
+
 .doit{
     margin-right: 20px;
 }

@@ -1,96 +1,49 @@
-<%- include("partials/header") -%> <% if(condition){ %>
-<div class="alert alert-danger text-center"><%=message%></div>
-<% } %>
-<div class="signup-container">
-  <div class="container">
-    <div class="left">
-      <h1>Teacher's Sign Up</h1>
-      <form action="/teacher_signup" method="POST">
-        <label for="username">Username</label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="Enter your username"
-          autocomplete="off"
-          required
-        />
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          autocomplete="off"
-          required
-        />
-        <label for="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-          required
-        />
-        <button type="submit">Sign Up</button>
-      </form>
+<%- include("partials/header") -%>
+  <% if(condition){ %>
+    <div class="alert alert-danger text-center">
+      <%=message%>
     </div>
-    <div class="right">
-      <h1>Student's Sign Up</h1>
-      <form action="/student_signup" method="POST">
-        <label for="username">Username</label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="Enter your username"
-          autocomplete="off"
-          required
-        />
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          autocomplete="off"
-          required
-        />
-        <label for="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-          required
-        />
-        <label for="rollno">Roll No.</label>
-        <input
-          type="text"
-          name="rollno"
-          id="rollno"
-          placeholder="Enter your roll no."
-          autocomplete="off"
-          required
-        />
-        <label for="branch">Branch</label>
-        <input
-          type="text"
-          name="branch"
-          id="branch"
-          placeholder="Enter your branch"
-          autocomplete="off"
-          required
-        />
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
-  </div>
-  <a class="sign-up" href="/">
-    <button>Login</button>
-  </a>
-</div>
-<!-- <div>
+    <% } %>
+      <div class="signup-container">
+        <div class="container">
+          <div class="left">
+            <h1>Teacher's Sign Up</h1>
+            <form action="/teacher_signup" method="POST">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off"
+                required />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" required />
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="Password" required />
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+          <div class="right">
+            <h1>Student's Sign Up</h1>
+            <form action="/student_signup" method="POST">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off"
+                required />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" required />
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="Password" required />
+              <label for="rollno">Roll No.</label>
+              <input type="text" name="rollno" id="rollno" placeholder="Enter your roll no." autocomplete="off"
+                required />
+              <label for="branch">Branch</label>
+              <input type="text" name="branch" id="branch" placeholder="Enter your branch" autocomplete="off"
+                required />
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+        <a class="sign-up" href="/">
+          <button>Login</button>
+        </a>
+      </div>
+      <!-- <div>
   <h1>Teacher's Signup</h1>
   <form action="/teacher_signup" method="POST">
     <div class="mb-3">
@@ -192,4 +145,4 @@
   </form>
 </div> -->
 
-<%- include("partials/footer") -%>
+      <%- include("partials/footer") -%>

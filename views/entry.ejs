@@ -1,115 +1,39 @@
-<%- include("partials/header") -%> <% if(condition){ %>
-<div class="alert alert-danger text-center"><%=message%></div>
-<% } %>
+<%- include("partials/header") -%>
+  <% if(condition){ %>
+    <div class="alert alert-danger text-center">
+      <%=message%>
+    </div>
+    <% } %>
 
-<div class="login-container">
-  <div class="container">
-    <div class="left">
-      <h1>Teacher's Login</h1>
-      <form action="/teacher_login" method="POST">
-        <label for="username">Username</label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="Enter your username"
-          autocomplete="off"
-          required
-        />
-        <label for="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-          required
-        />
-        <button type="submit">Log In</button>
-      </form>
-    </div>
-    <div class="right">
-      <h1>Student's Login</h1>
-      <form action="/student_login" method="POST">
-        <label for="username">Username</label>
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="Enter your username"
-          autocomplete="off"
-          required
-        />
-        <label for="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Password"
-          required
-        />
-        <button type="submit">Log In</button>
-      </form>
-    </div>
-  </div>
-  <a class="sign-up" href="/signup">
-    <button>Sign-Up</button>
-  </a>
-</div>
+      <div class="login-container">
+        <div class="container">
+          <div class="left">
+            <h1>Teacher's Login</h1>
+            <form action="/teacher_login" method="POST">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off"
+                required />
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="Password" required />
+              <button type="submit">Log In</button>
+            </form>
+          </div>
+          <div class="right">
+            <h1>Student's Login</h1>
+            <form action="/student_login" method="POST">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off"
+                required />
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="Password" required />
+              <button type="submit">Log In</button>
+            </form>
+          </div>
+        </div>
+        <a class="sign-up" href="/signup">
+          <button>Sign-Up</button>
+        </a>
+      </div>
 
-<!-- <div>
-  <h1>Teacher's Login</h1>
-  <form action="/teacher_login" method="POST">
-    <div class="mb-3">
-      <label for="username-register" class="mb-1">Username</label>
-      <input
-        name="username"
-        id="username-register"
-        class="form-control"
-        type="text"
-        placeholder="Enter your username"
-        autocomplete="off"
-        required
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input
-        name="password"
-        type="password"
-        class="form-control"
-        id="exampleInputPassword1"
-      />
-    </div>
-    <button type="submit" class="btn btn-primary">Log-In</button>
-  </form>
-</div>
 
-<div>
-  <h1>Student's Login</h1>
-  <form action="/student_login" method="POST">
-    <div class="mb-3">
-      <label for="username-register" class="mb-1">Username</label>
-      <input
-        name="username"
-        id="username-register"
-        class="form-control"
-        type="text"
-        placeholder="Enter your username"
-        autocomplete="off"
-        required
-      />
-    </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input
-        name="password"
-        type="password"
-        class="form-control"
-        id="exampleInputPassword1"
-      />
-    </div>
-    <button type="submit" class="btn btn-primary">Log-In</button>
-  </form>
-</div> -->
-
-<%- include("partials/footer") -%>
+      <%- include("partials/footer") -%>
